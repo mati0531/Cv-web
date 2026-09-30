@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logofolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/cursor.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header>
+        <nav aria-label="Navegación principal">
+
+            <a class="logo" href="index.html#inicio" aria-label="Ir al inicio">
+                <img src="img/Telefono.png" alt="">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+                aria-label="Abrir menú">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+            <ul id="menu-principal">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="experiencia.html">EXPERIENCIA</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="logofolio">
+
+        <h1 class="solo-lectura">
+            Logofolio
+        </h1>
+
+        <article class="logofolio-pieza logofolio-pieza--primera" aria-labelledby="nombre-logo-01">
+            <div class="logofolio-pieza__capsula">
+
+                <span class="logofolio-pieza__numero" aria-hidden="true">
+                    01
+                </span>
+
+                <h2 id="nombre-logo-01" class="logofolio-pieza__nombre">
+                    NOMBRE DEL LOGO
+                </h2>
+
+            </div>
+
+            <figure class="logofolio-pieza__presentacion">
+                <img class="logofolio-pieza__logo" src="img/css.svg" alt="Logotipo de NOMBRE DEL LOGO">
+            </figure>
+
+            <div class="logofolio-pieza__datos">
+
+                <p class="logofolio-pieza__dato">
+                    DESIGN AGENCY
+                </p>
+
+                <p class="logofolio-pieza__dato">
+                    VOL. 4 · 2026
+                </p>
+
+            </div>
+
+            <span class="logofolio-pieza__separador" aria-hidden="true"></span>
+
+            <span class="logofolio-pieza__separador" aria-hidden="true"></span>
+
+        </article>
+
+        <article class="logofolio-pieza" aria-labelledby="nombre-logo-02">
+            <div class="logofolio-pieza__capsula">
+
+                <span class="logofolio-pieza__numero" aria-hidden="true">
+                    02
+                </span>
+
+                <h2 id="nombre-logo-02" class="logofolio-pieza__nombre">
+                    NOMBRE DEL LOGO
+                </h2>
+
+            </div>
+
+            <figure class="logofolio-pieza__presentacion">
+                <img class="logofolio-pieza__logo" src="img/bootstrap.svg" alt="Logotipo de NOMBRE DEL LOGO"
+                    loading="lazy">
+            </figure>
+
+            <div class="logofolio-pieza__datos">
+
+                <p class="logofolio-pieza__dato">
+                    DESIGN AGENCY
+                </p>
+
+                <p class="logofolio-pieza__dato">
+                    VOL. 4 · 2026
+                </p>
+
+            </div>
+
+            <span class="logofolio-pieza__separador" aria-hidden="true"></span>
+
+            <span class="logofolio-pieza__separador" aria-hidden="true"></span>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <h2>
+                <span class="linea-footer">HABLEMOS,</span>
+                <span class="linea-footer">ESTOY LISTO PARA ESCUCHAR</span>
+                <span class="linea-footer">TU PRÓXIMA IDEA.</span>
+            </h2>
+
+            <div class="footer-contactos">
+
+                <p class="footer-contactos__titulo">
+                    CONTACTO
+                </p>
+
+                <div class="footer-links">
+
+                    <a class="footer-contacto" href="https://www.linkedin.com/in/matiasbalbierer/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="footer-contacto__icono" src="img/linkedin.svg" alt="">
+
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a class="footer-contacto" href="mailto:matias.balbierer@gmail.com">
+                        <img class="footer-contacto__icono" src="img/mail.svg" alt="">
+
+                        <span>matias.balbierer@gmail.com</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

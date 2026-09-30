@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riña</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cursor.js" defer></script>
+    <script src="js/comparador-rina.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header>
+        <nav aria-label="Navegación principal">
+
+            <a class="logo" href="index.html#inicio" aria-label="Ir al inicio">
+                <img src="img/Telefono.png" alt="">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+                aria-label="Abrir menú">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+            <ul id="menu-principal">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="experiencia.html">EXPERIENCIA</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="rina-page">
+
+        <figure class="rina-hero">
+            <img class="rina-hero__imagen" src="img/hero-riña.png"
+                alt="Persona vistiendo indumentaria negra frente a una pared con el logotipo de RIÑA" width="1704"
+                height="1086" fetchpriority="high">
+        </figure>
+
+        <section class="rina-manifiesto" aria-labelledby="titulo-rina">
+
+            <div class="rina-manifiesto__contenido">
+
+                <h1 id="titulo-rina" class="rina-manifiesto__titulo">
+                    <span>PENSADA PARA</span>
+                    <span>ENTRENAR USADA</span>
+                    <span>EN TODOS LADOS</span>
+                </h1>
+
+                <p class="rina-manifiesto__bajada">
+                    RIÑA ES UNA MARCA DE INDUMENTARIA QUE FUSIONA EL ENTRENAMIENTO
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="rina-concepto" aria-labelledby="titulo-concepto">
+
+
+            <div class="rina-concepto__composicion">
+
+                <figure class="rina-concepto__imagen rina-concepto__imagen--short">
+                    <img src="img/rina-concepto-short.png" alt="Detalle de un short deportivo de la marca RIÑA"
+                        width="1086" height="1448" loading="lazy">
+                </figure>
+
+                <figure class="rina-concepto__imagen rina-concepto__imagen--hoodie">
+                    <img src="img/rina-concepto-hoodie.png"
+                        alt="Detalle de una prenda negra con aplicaciones gráficas de RIÑA" width="1055" height="1491"
+                        loading="lazy">
+                </figure>
+
+                <div class="rina-concepto__texto">
+
+                    <h2 id="titulo-concepto" class="rina-concepto__titulo">
+                        <span>CONCEPTO Y</span>
+                        <span>VALORES</span>
+                        <span>
+                            DE LA MARCA<span class="rina-acento">.</span>
+                        </span>
+                    </h2>
+
+                    <p class="rina-concepto__descripcion">
+                        RIÑA ES UNA MARCA DE INDUMENTARIA QUE FUSIONA EL ENTRENAMIENTO
+                        CON LA VIDA URBANA. DISEÑADA PARA QUIENES SE EXIGEN EN EL GYM
+                        Y TAMBIÉN LLEVAN ESA ENERGÍA A LA CALLE.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="rina-logotipo" aria-labelledby="titulo-logotipo">
+
+
+
+            <div class="rina-logotipo__encabezado">
+
+                <h2 id="titulo-logotipo" class="rina-logotipo__titulo">
+                    <span>CONSTRUCCIÓN</span>
+
+                    <span>
+                        DEL LOGOTIPO<span class="rina-acento">.</span>
+                    </span>
+                </h2>
+
+                <p class="rina-logotipo__descripcion">
+                    EL LOGOTIPO DE RIÑA PARTE DE UNA ESTRUCTURA COMPACTA E INCLINADA
+                    QUE TRANSMITE MOVIMIENTO, FUERZA Y TENSIÓN. SU CONSTRUCCIÓN A 35°
+                    REFUERZA EL CARÁCTER DINÁMICO DE LA MARCA.
+                </p>
+
+            </div>
+
+            <figure class="rina-comparador" data-comparador style="--posicion-comparador: 50%;">
+
+                <img class="rina-comparador__imagen rina-comparador__imagen--construccion"
+                    src="img/logo-riña-construccion.png" alt="Construcción geométrica del logotipo de RIÑA" width="2158"
+                    height="1622">
+
+                <img class="rina-comparador__imagen rina-comparador__imagen--resultado" src="img/logo-riña-pleno.svg"
+                    alt="Logotipo final de RIÑA" width="2157" height="1621">
+
+                <input class="rina-comparador__rango" type="range" min="0" max="100" value="50"
+                    aria-label="Comparar la construcción geométrica con el logotipo terminado">
+
+                <div class="rina-comparador__divisor" aria-hidden="true">
+                    <span class="rina-comparador__control"></span>
+                </div>
+
+                <figcaption class="solo-lectura">
+                    Comparación interactiva entre la construcción geométrica y el
+                    logotipo final de RIÑA.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+        <section class="rina-variaciones" aria-labelledby="titulo-variaciones">
+
+            <div class="rina-variaciones__encabezado">
+
+                <h2 id="titulo-variaciones" class="rina-variaciones__titulo">
+                    <span>PALETA Y</span>
+
+                    <span>
+                        VARIACIONES<span class="rina-acento">.</span>
+                    </span>
+                </h2>
+
+                <p class="rina-variaciones__descripcion">
+                    EL SISTEMA CROMÁTICO DE RIÑA SE CONSTRUYE A PARTIR DE TRES TONOS
+                    DE ALTO CONTRASTE. SUS DISTINTAS COMBINACIONES PERMITEN QUE LA
+                    IDENTIDAD CONSERVE FUERZA, LEGIBILIDAD Y COHERENCIA EN CADA SOPORTE.
+                </p>
+
+            </div>
+
+            <div class="rina-variaciones__composicion">
+
+                <div class="rina-variaciones__fila rina-variaciones__fila--superior">
+
+                    <figure class="rina-variaciones__tarjeta
+                rina-variaciones__tarjeta--color
+                rina-variaciones__tarjeta--negro">
+
+                        <figcaption class="rina-variaciones__datos">
+                            <span>NEGRO · #191919</span>
+                            <span>NEGRO · #191919</span>
+                            <span>NEGRO · #191919</span>
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="rina-variaciones__tarjeta rina-variaciones__tarjeta--naranja">
+                        <img class="rina-variaciones__imagen" src="img/reduccion-riña-naranja.svg"
+                            alt="Versión reducida del logotipo RIÑA en marfil sobre fondo naranja" width="933"
+                            height="736" loading="lazy">
+                    </figure>
+
+                    <figure class="rina-variaciones__tarjeta rina-variaciones__tarjeta--marfil">
+                        <img class="rina-variaciones__imagen" src="img/logo-riña-marfil.svg"
+                            alt="Logotipo RIÑA en negro sobre fondo marfil" width="1305" height="736" loading="lazy">
+                    </figure>
+
+                </div>
+
+                <div class="rina-variaciones__fila rina-variaciones__fila--central">
+
+                    <figure class="rina-variaciones__tarjeta rina-variaciones__tarjeta--naranja">
+                        <img class="rina-variaciones__imagen" src="img/logo-riña-naranja.svg"
+                            alt="Logotipo RIÑA en marfil sobre fondo naranja" width="1305" height="736" loading="lazy">
+                    </figure>
+
+                    <figure class="rina-variaciones__tarjeta rina-variaciones__tarjeta--negro">
+                        <img class="rina-variaciones__imagen" src="img/reduccion-riña-negro.svg"
+                            alt="Versión reducida del logotipo RIÑA sobre fondo negro" width="933" height="736"
+                            loading="lazy">
+                    </figure>
+
+                    <figure class="rina-variaciones__tarjeta
+                rina-variaciones__tarjeta--color
+                rina-variaciones__tarjeta--marfil">
+
+                        <figcaption class="rina-variaciones__datos">
+                            <span>MARFIL · #E5E3CE</span>
+                            <span>MARFIL · #E5E3CE</span>
+                            <span>MARFIL · #E5E3CE</span>
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+                <div class="rina-variaciones__fila rina-variaciones__fila--inferior">
+
+                    <figure class="rina-variaciones__tarjeta
+                    rina-variaciones__tarjeta--color
+                    rina-variaciones__tarjeta--naranja">
+                        <figcaption class="rina-variaciones__datos">
+                            <span>NEGRO · #191919</span>
+                            <span>MARFIL · #E5E3CE</span>
+                            <span>NARANJA · #EA5B0C</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="rina-variaciones__tarjeta rina-variaciones__tarjeta--marfil">
+                        <img class="rina-variaciones__imagen" src="img/reduccion-riña-marfil.svg"
+                            alt="Versión reducida del logotipo RIÑA en negro sobre fondo marfil" width="933"
+                            height="736" loading="lazy">
+                    </figure>
+
+                    <figure class="rina-variaciones__tarjeta rina-variaciones__tarjeta--negro">
+                        <img class="rina-variaciones__imagen" src="img/logo-riña-negro.svg"
+                            alt="Logotipo RIÑA en marfil sobre fondo negro" width="1304" height="736" loading="lazy">
+                    </figure>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="rina-aplicaciones" aria-labelledby="titulo-aplicaciones">
+
+            <div class="rina-aplicaciones__encabezado">
+                <h2 id="titulo-aplicaciones" class="rina-aplicaciones__titulo">
+                    <span>APLICACIONES EN</span>
+
+                    <span>
+                        DIFERENTES FORMATOS<span class="rina-acento">.</span>
+                    </span>
+                </h2>
+
+                <p class="rina-aplicaciones__descripcion">
+                    LA IDENTIDAD SE EXTIENDE A DIFERENTES FORMATOS Y MATERIALES,
+                    ADAPTANDO EL SISTEMA VISUAL SIN PERDER SU CARÁCTER. CADA APLICACIÓN
+                    REFUERZA LA PRESENCIA DE LA MARCA EN LA INDUMENTARIA Y SUS DETALLES.
+                </p>
+            </div>
+
+            <div class="rina-aplicaciones__galeria">
+
+                <figure class="rina-aplicaciones__pieza">
+                    <img class="rina-aplicaciones__imagen" src="img/etiqueta-cuello.jpg"
+                        alt="Etiqueta de RIÑA cosida en el cuello de una prenda negra" width="1448" height="1086"
+                        loading="lazy">
+                </figure>
+
+                <figure class="rina-aplicaciones__pieza">
+                    <img class="rina-aplicaciones__imagen" src="img/etiqueta-bordada.jpg"
+                        alt="Etiqueta reducida de RIÑA bordada en el borde de una prenda negra" width="1254"
+                        height="1254" loading="lazy">
+                </figure>
+
+                <!-- TERCERA IMAGEN DE LA PRIMERA FILA
+
+    <figure class="rina-aplicaciones__pieza">
+        <img
+            class="rina-aplicaciones__imagen"
+            src="img/nombre-de-la-tercera-imagen.jpg"
+            alt="Descripción de la tercera aplicación"
+            width="0000"
+            height="0000"
+            loading="lazy"
+        >
+    </figure>
+
+    -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <h2>
+                <span class="linea-footer">HABLEMOS,</span>
+                <span class="linea-footer">ESTOY LISTO PARA ESCUCHAR</span>
+                <span class="linea-footer">TU PRÓXIMA IDEA.</span>
+            </h2>
+
+            <div class="footer-contactos">
+
+                <p class="footer-contactos__titulo">
+                    CONTACTO
+                </p>
+
+                <div class="footer-links">
+
+                    <a class="footer-contacto" href="https://www.linkedin.com/in/matiasbalbierer/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="footer-contacto__icono" src="img/linkedin.svg" alt="">
+
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a class="footer-contacto" href="mailto:matias.balbierer@gmail.com">
+                        <img class="footer-contacto__icono" src="img/mail.svg" alt="">
+
+                        <span>matias.balbierer@gmail.com</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
