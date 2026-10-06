@@ -764,6 +764,10 @@ nav ul li a:focus-visible {
     border-top: 1px solid var(--gris-oscuro);
 }
 
+.experiencias article:first-of-type {
+    border-top: none;
+}
+
 .experiencias article .tareas {
     max-width: 900px;
     width: 100%;
@@ -973,6 +977,9 @@ nav ul li a:focus-visible {
 /* RIÑA */
 
 .rina-page {
+    --rina-ancho-contenido: 1920px;
+    --rina-margen-lateral: clamp(1.5rem, 4vw, 5rem);
+
     width: 100%;
     color: var(--marfil);
     overflow: clip;
@@ -984,12 +991,12 @@ nav ul li a:focus-visible {
     width: 100%;
     margin: 0;
     padding:
-        clamp(5rem, 6vw, 7rem) clamp(1.5rem, 4vw, 5rem) 0;
+        clamp(5rem, 6vw, 7rem) var(--rina-margen-lateral) 0;
 }
 
 .rina-hero__imagen {
     display: block;
-    width: min(100%, 1800px);
+    width: min(100%, var(--rina-ancho-contenido));
     height: auto;
     margin-inline: auto;
 }
@@ -998,11 +1005,11 @@ nav ul li a:focus-visible {
 
 .rina-manifiesto {
     padding:
-        clamp(4rem, 6vw, 7rem) clamp(1.5rem, 6vw, 7rem) clamp(2.5rem, 6vw, 4.5rem);
+        clamp(4rem, 6vw, 7rem) var(--rina-margen-lateral) clamp(2.5rem, 6vw, 4.5rem);
 }
 
 .rina-manifiesto__contenido {
-    width: min(100%, 1700px);
+    width: min(100%, var(--rina-ancho-contenido));
     margin-inline: auto;
 }
 
@@ -1023,7 +1030,7 @@ nav ul li a:focus-visible {
 }
 
 .rina-manifiesto__bajada {
-    max-width: 52ch;
+    max-width: 60ch;
     margin-top: clamp(2rem, 3vw, 3rem);
     margin-right: 0;
     margin-left: auto;
@@ -1039,14 +1046,14 @@ nav ul li a:focus-visible {
 
 .rina-concepto {
     padding:
-        0 clamp(1.5rem, 4vw, 5rem) clamp(4rem, 6vw, 7rem);
+        0 var(--rina-margen-lateral) clamp(4rem, 6vw, 7rem);
 }
 
 .rina-concepto__composicion {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: auto auto;
-    width: min(100%, 1700px);
+    width: min(100%, var(--rina-ancho-contenido));
     margin-inline: auto;
     padding-top: clamp(5rem, 8vw, 9rem);
     column-gap: clamp(1.5rem, 2.5vw, 3rem);
@@ -1114,11 +1121,11 @@ nav ul li a:focus-visible {
 
 .rina-logotipo {
     padding:
-        0 clamp(1.5rem, 4vw, 5rem) 0;
+        0 var(--rina-margen-lateral) 0;
 }
 
 .rina-logotipo__encabezado {
-    width: min(100%, 1450px);
+    width: min(100%, var(--rina-ancho-contenido));
     margin: clamp(3rem, 4vw, 5rem) auto 0;
 }
 
@@ -1264,11 +1271,11 @@ nav ul li a:focus-visible {
     --rina-negro-marca: #191919;
 
     padding:
-        clamp(4rem, 6vw, 7rem) clamp(1.5rem, 4vw, 5rem) clamp(4rem, 7vw, 8rem);
+        clamp(4rem, 6vw, 7rem) var(--rina-margen-lateral) clamp(4rem, 7vw, 8rem);
 }
 
 .rina-variaciones__composicion {
-    width: min(100%, 1700px);
+    width: min(100%, var(--rina-ancho-contenido));
     margin: clamp(4rem, 6vw, 7rem) auto 0;
 }
 
@@ -1367,11 +1374,11 @@ nav ul li a:focus-visible {
 
 .rina-aplicaciones {
     padding:
-        0 clamp(1.5rem, 4vw, 5rem) clamp(9rem, 13vw, 15rem);
+        0 var(--rina-margen-lateral) clamp(9rem, 13vw, 15rem);
 }
 
 .rina-aplicaciones__encabezado {
-    width: min(100%, 1450px);
+    width: min(100%, var(--rina-ancho-contenido));
     margin: clamp(4rem, 6vw, 7rem) auto 0;
 }
 
@@ -1394,7 +1401,7 @@ nav ul li a:focus-visible {
 .rina-aplicaciones__galeria {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: min(100%, 1700px);
+    width: min(100%, var(--rina-ancho-contenido));
     margin: clamp(4rem, 6vw, 7rem) auto 0;
     gap: clamp(1rem, 1.75vw, 2.5rem);
 }
@@ -1510,6 +1517,10 @@ nav ul li a:focus-visible {
     background-color: var(--gris-oscuro);
 }
 
+.logofolio > .logofolio-pieza:last-of-type .logofolio-pieza__separador {
+    display: none;
+}
+
 /* LOGO CENTRAL */
 
 .logofolio-pieza__presentacion {
@@ -1548,6 +1559,10 @@ nav ul li a:focus-visible {
     margin-inline: auto;
     padding-bottom: clamp(3rem, 5vw, 5rem);
     border-bottom: 1px solid var(--gris-oscuro);
+}
+
+.social-media > .social-proyecto:last-of-type .social-proyecto__contenido {
+    border-bottom: none;
 }
 
 .social-proyecto__titulo {
