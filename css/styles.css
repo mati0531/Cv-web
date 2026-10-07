@@ -216,6 +216,7 @@ nav ul li a:focus-visible {
 }
 
 .hero h1 .destacado {
+    display: block;
     color: var(--verde);
 }
 
@@ -685,7 +686,7 @@ nav ul li a:focus-visible {
     font-weight: 600;
     letter-spacing: -0.03em;
     color: var(--blanco);
-    border-bottom: 1px solid var(--gris-claro);
+    border-bottom: 1px solid var(--gris-oscuro);
 }
 
 .descripcion-perfil .descripcion-perfil-2 .descripcion-texto p {
